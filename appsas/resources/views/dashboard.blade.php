@@ -39,7 +39,7 @@
                         @endforeach
                     </table>
                     @else
-                        <p>You have no posts</p>
+                        <p>You have no coins</p>
                     @endif
                 </div>
             </div>
