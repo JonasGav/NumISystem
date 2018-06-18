@@ -40,9 +40,9 @@
             </div>
         @endif <?php $i++; ?>
             @endforeach
-        </div> 
+        </div>
                 <br>
-     
+
     @else
         <p>No posts found</p>
     @endif
@@ -58,13 +58,6 @@
          {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
          {!!Form::close()!!}
     @endif
-    <br>
-        @if(Auth::user()->username == 'admin')
-        <div class="form-group">
-                {{Form::text('comment', '', ['class' => 'form-control', 'placeholder' => 'Comment'])}}
-        </div>
-        {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
-        @endif
     @endif
 
 @endsection
